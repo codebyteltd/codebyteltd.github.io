@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.markdown>* {
+  all: revert;
+  text-align: center;
+
+}
+
+/* Container for the entire markdown content */
+.markdown-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for the markdown content */
+.markdown-content {
+  width: 100%;
+  line-height: 1.6;
+}
+
+/* Reset all markdown elements */
+.markdown-content>* {
+  all: revert;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center and style images */
+.markdown-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 8px;
+}
+
+/* Style headings */
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Style paragraphs */
+.markdown-content p {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+/* Style links */
+.markdown-content a {
+  color: #3182ce;
+  text-decoration: none;
+}
+
+.markdown-content a:hover {
+  text-decoration: underline;
+}
+
+/* Style lists */
+.markdown-content ul,
+.markdown-content ol {
+  text-align: left;
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Style blockquotes */
+.markdown-content blockquote {
+  border-left: 4px solid #e2e8f0;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background-color: #f7fafc;
+  max-width: 90%;
+  font-style: italic;
+}
+
+/* Style code blocks */
+.markdown-content pre {
+  background-color: #f7fafc;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem auto;
+  max-width: 90%;
+}
+
+/* Style inline code */
+.markdown-content code {
+  background-color: #f7fafc;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+
+/* Style tables */
+.markdown-content table {
+  width: 90%;
+  margin: 1.5rem auto;
+  border-collapse: collapse;
+}
+
+.markdown-content th,
+.markdown-content td {
+  border: 1px solid #e2e8f0;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.markdown-content th {
+  background-color: #f7fafc;
+}
+
+/* Add responsive styling */
+@media (max-width: 768px) {
+  .markdown-container {
+    padding: 15px;
+  }
+
+  .markdown-content blockquote,
+  .markdown-content pre,
+  .markdown-content table {
+    max-width: 100%;
+  }
+}
