@@ -1,6 +1,4 @@
-# Welcome to My Tech Blog
-
-## Developing Odoo
+## Developing Odoo with a convenient reloading
 #### Odoo configuration
 Inside the odoo `odoo.conf` configuation file, find the `addons_path` inside there insert the addons folder where the new module is build.
 
